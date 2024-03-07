@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:padding="22dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+
+            android:id="@+id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Our menu"
+            android:textColor="@color/red"
+            android:textSize="44dp"
+            android:fontFamily="sans-serif-light"
+
+            />
+
+        <TextView
+            android:id="@+id/text_view_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shahzodklay@gimail.com"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+           />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_starters"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="73dp"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/th"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/text_view_restaurant_name"
+                    android:text="Starters"
+                    android:id="@+id/text_view_starters"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_mains"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@id/card_view_starters">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/b40538_a63384de827c482ab5a4f769aec0ad3a_mv2"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main courses"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20dp"
+
+
+
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_desserts"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/card_view_mains">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/burger"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deserts"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20dp"
+
+
+
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
+
